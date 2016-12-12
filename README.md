@@ -8,11 +8,11 @@ As always, it is recommended that you read this entire problem set prior to begi
 
 ### Starting point
 
-Use the Express generator to Create a new Express application in the directory that you cloned your forked repository to. You may call this application `products_and_categories` (or whatever you want that represents what it is). For this application you will not have to worry about style until stretch goals. Here are the features you are looking to build:
+The Express generator was used to Create a new Express application in the directory that you cloned your forked repository to.  For this application you will not have to worry about style until stretch goals. Here are the features you are looking to build:
 
 #### Feature 0
 
-As a developer, I would like to have an API for creating and retrieving `categories`. A `category` document consists of the category `name` and its `_id`.
+As a developer, I would like to have an API for creating and retrieving `categories`. A `category` document consists of the category `name` and its `id`.
 
 _Question_ Is this one story or multiple?
 
