@@ -1,5 +1,38 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  
+  form
+    label(id='lbCategoryForm') New Category Form
+      br
+      br
+    label(id='lbCategoryName') Name
+    | &nbsp &nbsp
+    label(for='categoryName')
+      input#categoryName(type='text' required)
+      br
+    button#btCreateCategory(type='button') Create Category
+
+   form
+    label(id='ProductForm') New Product Form
+      br
+      br
+    label(for='ProductName') Name
+      input#ProductName(type='text' required)
+      br
+    label(for='ProductPrice') Price
+      input#ProductPrice(type='text' required)
+      br
+    label(for='ProductDescription') Description
+      input#ProductDescription(type='text' required)
+      br
+    label(for='Category01')
+      input#Category01(type='checkbox')
+    label(for='Category02')
+      input#Category02(type='checkbox')
+    label(for='Category03')
+      input#Category03(type='checkbox')
+
+      button#btCreateProduct(type='button') Create Product 
+
+    label(id='lbProductList') Product List

@@ -9,7 +9,7 @@ module.exports = {
             host: '127.0.0.1',
             user: 'root',
             password: '',
-            database: 'inventory_development'
+            database: 'category_development'
         },
         pool: {
             min: 2,
@@ -43,7 +43,7 @@ module.exports = {
             host: '127.0.0.1',
             user: 'root',
             password: '',
-            database: 'inventory_test'
+            database: 'category_test'
         },
         pool: {
             min: 2,
