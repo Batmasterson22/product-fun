@@ -2,37 +2,28 @@ extends layout
 
 block content
   
-  form
-    label(id='lbCategoryForm') New Category Form
+  fieldset
+    legend New Category Form
+    form(action'/products' method='POST')
+      label(id='lbCategoryName') Name
+      | &nbsp &nbsp
+      label(for='categoryName')
+        input#categoryName(type='text' name='name' required)
       br
-      br
-    label(id='lbCategoryName') Name
-    | &nbsp &nbsp
-    label(for='categoryName')
-      input#categoryName(type='text' required)
-      br
-    button#btCreateCategory(type='button') Create Category
-
-   form
-    label(id='ProductForm') New Product Form
-      br
-      br
+      button(type='submit' id='savedCategory' value='Submit') Create Category
+    
+  fieldset
+    legend New Product Form
+    form
     label(for='ProductName') Name
-      input#ProductName(type='text' required)
-      br
+    input#ProductName(type='text' required)
+    br
     label(for='ProductPrice') Price
-      input#ProductPrice(type='text' required)
-      br
+    input#ProductPrice(type='text' required)
+    br
     label(for='ProductDescription') Description
-      input#ProductDescription(type='text' required)
-      br
-    label(for='Category01')
-      input#Category01(type='checkbox')
-    label(for='Category02')
-      input#Category02(type='checkbox')
-    label(for='Category03')
-      input#Category03(type='checkbox')
-
-      button#btCreateProduct(type='button') Create Product 
-
-    label(id='lbProductList') Product List
+    input#ProductDescription(type='text' required)
+    
+    button#btCreateProduct(type='button') Create Product 
+    
+  label(id='lbProductList') Product List

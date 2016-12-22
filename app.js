@@ -5,7 +5,7 @@ const logger = require('morgan')
 const cookieParser = require('cookie-parser')
 const bodyParser = require('body-parser')
 
-const routes = require('./routes/index')
+//const routes = require('./routes/index')
 const products = require('./routes/products')
 
 const app = express()
@@ -26,8 +26,8 @@ app.use(cookieParser())
 app.use('/jasmine', express.static('node_modules/jasmine-core/lib/jasmine-core/'))
 app.use(express.static(path.join(__dirname, 'public')))
 
-app.use('/', routes)
-app.use('/products', products)
+//app.use('/', routes)
+app.use('/', products)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

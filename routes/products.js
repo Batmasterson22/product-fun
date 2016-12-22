@@ -4,7 +4,7 @@ const Product = require('../models/product')
 const CategoryController = require('./category-controller')
 const CategoryModel = require('../models/category')
 
-router.get('/', function(req, res) {  
+router.get('/', function(req, res) {
   res.render('index')
 })
 
@@ -15,7 +15,9 @@ router.get('/', function(req, res) {
 router.post('/', bodyToCategory, CategoryController.create)
 
 function bodyToCategory(req, res, next) {
+  console.log('req.body', req.body)
   req.category = new CategoryModel(req.body)
+  console.log('req.category', req.category)
   next()
 }
 
